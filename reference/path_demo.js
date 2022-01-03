@@ -1,5 +1,7 @@
 const path = require('path');
 
+// use 'node path_demo' in the terminal
+
 // Base file name
 console.log(path.basename(__filename));
 
@@ -11,3 +13,6 @@ console.log(path.extname(__filename));
 
 // Create path object
 console.log(path.parse(__filename));
+
+// Concatenate paths
+console.log(path.join(__dirname, 'test', 'hello.html'));
